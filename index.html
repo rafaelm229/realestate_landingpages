@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astro Santa Marina | Lançamento Imobiliário Água Branca</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo">Astro<span> Santa Marina</span></a>
+      <div class="lang-selector">
+        <button id="lang-pt" class="active">PT</button>
+        <button id="lang-en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+    <h1 id="hero-headline" style="color: #fff;">1 e 2 dormitórios com terraço e lazer completo na Água Branca </h1>
+    <p class="sub" id="hero-sub" style="color: #f7f7f7;">Compre na planta com condições imperdíveis</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/5511993353228" class="btn btn-gold" target="_blank">Agendar Visita</a>
+        <a href="#simulation" class="btn">Simular Financiamento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PROPERTY -->
+  <section class="section about-property">
+    <div class="container">
+      <div class="about-text">
+        <p id="about-text">Apartamentos à venda de 1 e 2 dorms., lazer completo e fácil acesso às principais vias da Zona Oeste. Ao lado da futura Estação Santa Marina.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Galeria</h2>
+      <div class="gallery-tabs">
+        <div class="gallery-tab active" data-target="illustrations">Fotos ilustrativas</div>
+        <div class="gallery-tab" data-target="floorplans">Plantas</div>
+      </div>
+
+      <div id="illustrations" class="gallery-container active">
+        <div class="gallery-images">
+          <div class="gallery-item"><img src="assets/images/ilustrativas/playground1.jpeg" alt="Apartamento Astro" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/playground.jpeg" alt="Terraço" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/sala_de_festas.jpeg" alt="Lazer" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/piscina.jpeg" alt="Piscina" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/petplace01.jpeg" alt="Piscina" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/jogos.jpeg" alt="Piscina" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/easy_market.jpeg" alt="Piscina" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/delivery.jpeg" alt="Piscina" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/coworking.jpeg" alt="Piscina" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/churrasqueira.webp" alt="Piscina" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/campo_de_futebol.jpeg" alt="Piscina" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/ilustrativas/academia.jpeg" alt="Piscina" class="gallery-fullscreen"></div>
+        </div>
+      </div>
+
+      <div id="floorplans" class="gallery-container">
+        <div class="gallery-images">
+          <div class="gallery-item"><img src="assets/images/plantas/planta01.webp" alt="Planta 1 Dorm" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/plantas/planta02.jpeg" alt="Planta 1 Dorm" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/plantas/planta03.jpeg.jpeg" alt="Planta 1 Dorm" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/plantas/planta04.jpeg" alt="Planta 1 Dorm" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/plantas/planta05.jpeg" alt="Planta 1 Dorm" class="gallery-fullscreen"></div>
+          <div class="gallery-item"><img src="assets/images/plantas/planta06.jpeg" alt="Planta 1 Dorm" class="gallery-fullscreen"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fullscreen Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+      <span class="gallery-modal-close" id="gallery-modal-close">&times;</span>
+      <img class="gallery-modal-content" id="gallery-modal-img" alt="">
+      <div id="gallery-modal-caption"></div>
+    </div>
+   
+  </section>
+
+  <!-- HIGHLIGHTS SLIDER -->
+  <section class="section highlights">
+    <div class="container">
+      <h2 class="section-title">Diferenciais</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-football-ball"></i></div>
+              <h3>Campinho</h3>
+              <p>Mini campo de futebol para jogos e atividades ao ar livre.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-swimmer"></i></div>
+              <h3>Piscinas</h3>
+              <p>Piscina adulto e infantil com deck exclusivo e espreguiçadeiras.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-tree"></i></div>
+              <h3>Praça</h3>
+              <p>Área verde arborizada com bancos e sombra ideal para descanso.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-party-horn"></i></div>
+              <h3>Salão de Festas</h3>
+              <p>Espaço gourmet com churrasqueira, cozinha e TV para eventos.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-paw"></i></div>
+              <h3>Pet Place</h3>
+              <p>Área dedicada aos pets com banho, brinquedos e espaço de convivência.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-hammock"></i></div>
+              <h3>Redário</h3>
+              <p>Área relaxante com redes sob árvores e vista panorâmica.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-fire"></i></div>
+              <h3>Churrasqueira</h3>
+              <p>Churrasqueiras completas com pia, forno e área coberta.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-baby-carriage"></i></div>
+              <h3>Pet Care & Brinquedoteca</h3>
+              <p>Atendimento pet e brinquedoteca segura para crianças.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-gamepad"></i></div>
+              <h3>Salão de Jogos</h3>
+              <p>Futebol de mesa, sinuca, videogame e áreas de socialização.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-dumbbell"></i></div>
+              <h3>Fitness</h3>
+              <p>Academia completa com equipamentos de última geração.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-washing-machine"></i></div>
+              <h3>Lavanderia</h3>
+              <p>Lavanderia coletiva com máquinas de alta eficiência.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Coworking</h3>
+              <p>Espaço moderno para trabalho remoto com Wi-Fi e privacidade.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="slide-icon"><i class="fas fa-store"></i></div>
+              <h3>Easy Market</h3>
+              <p>Mini mercado dentro do condomínio para compras rápidas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+        <span class="slider-dot active" data-slide="0"></span>
+        <span class="slider-dot" data-slide="1"></span>
+        <span class="slider-dot" data-slide="2"></span>
+        <span class="slider-dot" data-slide="3"></span>
+        <span class="slider-dot" data-slide="4"></span>
+        <span class="slider-dot" data-slide="5"></span>
+        <span class="slider-dot" data-slide="6"></span>
+        <span class="slider-dot" data-slide="7"></span>
+        <span class="slider-dot" data-slide="8"></span>
+        <span class="slider-dot" data-slide="9"></span>
+        <span class="slider-dot" data-slide="10"></span>
+        <span class="slider-dot" data-slide="11"></span>
+        <span class="slider-dot" data-slide="12"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section location">
+    <div class="container">
+      <h2 class="section-title">Localização</h2>
+      <p id="location-text">Água Branca, São Paulo – SP. Fácil acesso à Marginal Tietê, próximo ao Mercado Municipal e ao lado da futura Estação Santa Marina.</p>
+      <div class="location-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14845.862341483875!2d-46.694249955946106!3d-23.516377542872327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef80c2a0f14cb%3A0x8466d1465f1cdcaf!2s%C3%81gua%20Branca%2C%20S%C3%A3o%20Paulo%20-%20State%20of%20S%C3%A3o%20Paulo!5e1!3m2!1sen!2sbr!4v1757860073713!5m2!1sen!2sbr" width="1170" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a href="https://wa.me/5511993353228" class="btn btn-gold" target="_blank">Agendar Visita</a>
+    </div>
+  </section>
+
+  <!-- ABOUT AREA -->
+  <section class="section about-area">
+    <div class="container">
+      <h2 class="section-title">Sobre a Região</h2>
+      <p id="area-text" class="text-center">A Zona Oeste de São Paulo oferece mobilidade, diversidade de comércios, instituições de ensino e lazer. Bairros como Barra Funda, Vila Madalena, Pinheiros e Sumaré completam o estilo de vida moderno da região.</p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-final">
+    <div class="container">
+      <h2 id="cta-headline">Fale com um corretor online agora mesmo e faça sua simulação de financiamento. Aproveite preços de lançamento!</h2>
+      <p id="cta-sub">Talk to an online broker now and run your mortgage simulation. Take advantage of launch prices!</p>
+      <a href="https://wa.me/5511993353228" class="btn btn-gold" target="_blank">Agendar Visita</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Astro Santa Marina. Todos os direitos reservados. As informações contidas neste site são meramente ilustrativas e estão sujeitas a alterações sem aviso prévio. Consulte a administradora do empreendimento para detalhes legais e contratuais.</p>
+    <p style="margin-top: 10px; font-size: 13px; opacity: 0.8;">For legal information, please refer to the official registry and sales office.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
