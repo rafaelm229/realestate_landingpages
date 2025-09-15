@@ -315,7 +315,7 @@
 
     /* === LOCATION === */
     .location {
-      background-color: var(--gray);
+      background-color: var(--primary-blue);
       text-align: center;
     }
 
@@ -344,6 +344,48 @@
         background-color: var(--white);
         text-align: center;
     }
+
+    /* Flex layout para a seção Sobre a Região */
+.about-area-flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-area-img {
+  flex: 1 1 320px;
+  max-width: 420px;
+}
+
+.about-area-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.about-area-text {
+  flex: 2 1 400px;
+  min-width: 260px;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 900px) {
+  .about-area-flex {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .about-area-img,
+  .about-area-text {
+    max-width: 100%;
+    width: 100%;
+  }
+  .about-area-text {
+    min-width: 0;
+  }
+}
 
     /* === CTA FINAL === */
     .cta-final {
