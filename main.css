@@ -462,3 +462,27 @@
     display: none !important;
   }
 }
+
+/* Botão flutuante WhatsApp só no mobile */
+.whatsapp-float-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float-mobile {
+    display: flex;
+    position: fixed;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .whatsapp-float-mobile button {
+    pointer-events: auto;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
